@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		570F7098F773893B4612C2B8 /* Pods_Pass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC431F1A5929CF3643B6B47 /* Pods_Pass.framework */; };
 		6E2F31A846604F3EAE796BCF /* Pods_PassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD12EA15E60C70A59411613 /* Pods_PassUITests.framework */; };
+		C7416C131D602B6300DEF2D6 /* FriendClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7416C121D602B6300DEF2D6 /* FriendClass.swift */; };
+		C7416C151D602EBE00DEF2D6 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7416C141D602EBE00DEF2D6 /* CustomCell.swift */; };
 		C7A53F691D3C2406006CFAA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A53F681D3C2406006CFAA7 /* MapKit.framework */; };
 		C7A53F6D1D3C254B006CFAA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A53F6C1D3C254B006CFAA7 /* ProfileViewController.swift */; };
 		C7A53F6F1D3C28E8006CFAA7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A53F6E1D3C28E8006CFAA7 /* CurrentLocationViewController.swift */; };
@@ -61,6 +63,8 @@
 		A939063E6A6AEFA5A1331EDD /* Pods-PassUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassUITests/Pods-PassUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEC431F1A5929CF3643B6B47 /* Pods_Pass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD12EA15E60C70A59411613 /* Pods_PassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7416C121D602B6300DEF2D6 /* FriendClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendClass.swift; sourceTree = "<group>"; };
+		C7416C141D602EBE00DEF2D6 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C7A53F681D3C2406006CFAA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C7A53F6C1D3C254B006CFAA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C7A53F6E1D3C28E8006CFAA7 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				C7A53F6E1D3C28E8006CFAA7 /* CurrentLocationViewController.swift */,
 				C7A53F721D3C294E006CFAA7 /* LoginViewController.swift */,
 				C7A53F741D3C29C5006CFAA7 /* FriendsMainViewController.swift */,
+				C7416C141D602EBE00DEF2D6 /* CustomCell.swift */,
+				C7416C121D602B6300DEF2D6 /* FriendClass.swift */,
 				C7A53F761D3C29F1006CFAA7 /* ViewFriendViewController.swift */,
 				C7A53F781D3C2A1D006CFAA7 /* AddFriendViewController.swift */,
 				C7A53F7A1D3C2A2C006CFAA7 /* ViewRequestViewController.swift */,
@@ -484,8 +490,10 @@
 				C7A53F791D3C2A1D006CFAA7 /* AddFriendViewController.swift in Sources */,
 				C7A53F891D3C2C78006CFAA7 /* CustomerSupportViewController.swift in Sources */,
 				C7A53F751D3C29C5006CFAA7 /* FriendsMainViewController.swift in Sources */,
+				C7416C151D602EBE00DEF2D6 /* CustomCell.swift in Sources */,
 				C7A53F7F1D3C2A4C006CFAA7 /* EventsPageViewController.swift in Sources */,
 				F63D58F91D318490000C02E9 /* ViewController.swift in Sources */,
+				C7416C131D602B6300DEF2D6 /* FriendClass.swift in Sources */,
 				C7A53F6F1D3C28E8006CFAA7 /* CurrentLocationViewController.swift in Sources */,
 				F63D58FF1D318490000C02E9 /* Pass.xcdatamodeld in Sources */,
 				C7A53F7D1D3C2A3E006CFAA7 /* RequestFriendViewController.swift in Sources */,

@@ -9,9 +9,36 @@
 import UIKit
 
 class ViewFriendViewController: UIViewController {
+    
+    var name: String?
+    var addr: String?
+    var image: UIImage?
+    
 
+    @IBOutlet weak var fImage: UIImageView!
+    
+    @IBOutlet weak var fName: UILabel!
+    
+    @IBOutlet weak var fHsAttended: UILabel!
+    
+    @IBOutlet weak var fCollgeAttended: UILabel!
+    
+    @IBOutlet weak var fCurrentJob: UILabel!
+    
+    @IBOutlet weak var fBday: UILabel!
+    
+    @IBOutlet weak var fAddr: UILabel!
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fImage.image = image
+        fName.text = name
+        fAddr.text = addr
+        
+        
 
         // Do any additional setup after loading the view.
     }
