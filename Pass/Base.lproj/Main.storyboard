@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2ki-uq-Sbp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="evK-an-Fqc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -41,7 +41,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bin-aS-jmZ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bin-aS-jmZ">
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <connections>
                                     <outlet property="delegate" destination="DQK-Zr-jJg" id="S58-Hg-74d"/>
@@ -49,8 +49,17 @@
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bin-aS-jmZ" firstAttribute="bottom" secondItem="EKa-dt-t8U" secondAttribute="top" id="2Vw-3Y-thJ"/>
+                            <constraint firstItem="Bin-aS-jmZ" firstAttribute="top" secondItem="ssP-7m-oSL" secondAttribute="bottom" constant="1" id="s4J-z4-3DI"/>
+                            <constraint firstItem="Bin-aS-jmZ" firstAttribute="leading" secondItem="Q2k-O4-fhK" secondAttribute="leading" id="t5X-Oe-NLv"/>
+                            <constraint firstAttribute="trailing" secondItem="Bin-aS-jmZ" secondAttribute="trailing" id="v2q-DK-8su"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FWO-Jx-8Pa"/>
+                    <connections>
+                        <outlet property="mapView" destination="Bin-aS-jmZ" id="KgN-8z-a2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zui-tA-DIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,6 +212,7 @@
                                 <state key="normal" title="Choose Existing"/>
                                 <connections>
                                     <action selector="ChooseExisting" destination="Uzg-DW-TaM" eventType="touchUpInside" id="ep7-rj-csV"/>
+                                    <action selector="choosePhotoAction:" destination="mfy-aC-baV" eventType="touchUpInside" id="w48-n0-5xs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO8-gY-H0J">
@@ -246,6 +256,7 @@
                                 <state key="normal" title="Take Photo"/>
                                 <connections>
                                     <action selector="TakePhoto" destination="Uzg-DW-TaM" eventType="touchUpInside" id="Ugb-92-3CQ"/>
+                                    <action selector="takePhotoAction:" destination="mfy-aC-baV" eventType="touchUpInside" id="J62-on-mIs"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First, Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-Cb-9J1">
@@ -358,6 +369,11 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chooseExisting" destination="v2f-cd-r9M" id="lDO-Wa-d2h"/>
+                        <outlet property="imageDisplay" destination="yb6-eL-ODw" id="PRf-uD-AXL"/>
+                        <outlet property="takePhoto" destination="Pgt-f6-eks" id="COI-cI-6N4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uzg-DW-TaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

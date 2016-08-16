@@ -296,6 +296,7 @@
 				TargetAttributes = {
 					F63D58F21D318490000C02E9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8M554PQSYN;
 					};
 					F63D59091D318490000C02E9 = {
 						CreatedOnToolsVersion = 7.3;
@@ -643,10 +644,13 @@
 			baseConfigurationReference = 45B1F77D7BC9586D84596FF1 /* Pods-Pass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "J-NES.Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -655,10 +659,13 @@
 			baseConfigurationReference = 253EA40D71117BB07E6E533D /* Pods-Pass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "J-NES.Pass";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
