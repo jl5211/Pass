@@ -36,6 +36,9 @@
 		F63D59041D318490000C02E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63D59021D318490000C02E9 /* LaunchScreen.storyboard */; };
 		F63D590F1D318490000C02E9 /* PassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D590E1D318490000C02E9 /* PassTests.swift */; };
 		F63D591A1D318490000C02E9 /* PassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D59191D318490000C02E9 /* PassUITests.swift */; };
+		F6524E231D85D47700F06897 /* FriendRequestsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E221D85D47700F06897 /* FriendRequestsCustomCell.swift */; };
+		F6524E251D85D4C300F06897 /* EventsNearCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E241D85D4C300F06897 /* EventsNearCustomCell.swift */; };
+		F6524E271D85D4DF00F06897 /* EventsJoinedCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E261D85D4DF00F06897 /* EventsJoinedCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		F63D59151D318490000C02E9 /* PassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63D59191D318490000C02E9 /* PassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassUITests.swift; sourceTree = "<group>"; };
 		F63D591B1D318490000C02E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6524E221D85D47700F06897 /* FriendRequestsCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestsCustomCell.swift; sourceTree = "<group>"; };
+		F6524E241D85D4C300F06897 /* EventsNearCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsNearCustomCell.swift; sourceTree = "<group>"; };
+		F6524E261D85D4DF00F06897 /* EventsJoinedCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsJoinedCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,9 +200,12 @@
 				C7416C121D602B6300DEF2D6 /* FriendClass.swift */,
 				C7A53F761D3C29F1006CFAA7 /* ViewFriendViewController.swift */,
 				C7A53F781D3C2A1D006CFAA7 /* AddFriendViewController.swift */,
+				F6524E221D85D47700F06897 /* FriendRequestsCustomCell.swift */,
 				C7A53F7A1D3C2A2C006CFAA7 /* ViewRequestViewController.swift */,
 				C7A53F7C1D3C2A3E006CFAA7 /* RequestFriendViewController.swift */,
 				C7A53F7E1D3C2A4C006CFAA7 /* EventsPageViewController.swift */,
+				F6524E241D85D4C300F06897 /* EventsNearCustomCell.swift */,
+				F6524E261D85D4DF00F06897 /* EventsJoinedCustomCell.swift */,
 				C7A53F801D3C2A69006CFAA7 /* ViewAnEventViewController.swift */,
 				C7A53F821D3C2AC4006CFAA7 /* ViewJoinedEventsViewController.swift */,
 				C7A53F841D3C2ADB006CFAA7 /* CreateAnEventViewController.swift */,
@@ -489,6 +498,7 @@
 			files = (
 				C7A53F851D3C2ADB006CFAA7 /* CreateAnEventViewController.swift in Sources */,
 				C7A53F731D3C294E006CFAA7 /* LoginViewController.swift in Sources */,
+				F6524E271D85D4DF00F06897 /* EventsJoinedCustomCell.swift in Sources */,
 				C7A53F831D3C2AC4006CFAA7 /* ViewJoinedEventsViewController.swift in Sources */,
 				C7A53F771D3C29F1006CFAA7 /* ViewFriendViewController.swift in Sources */,
 				C7A53F7B1D3C2A2C006CFAA7 /* ViewRequestViewController.swift in Sources */,
@@ -498,11 +508,13 @@
 				C7416C151D602EBE00DEF2D6 /* CustomCell.swift in Sources */,
 				C7A53F7F1D3C2A4C006CFAA7 /* EventsPageViewController.swift in Sources */,
 				F63D58F91D318490000C02E9 /* ViewController.swift in Sources */,
+				F6524E251D85D4C300F06897 /* EventsNearCustomCell.swift in Sources */,
 				C7416C131D602B6300DEF2D6 /* FriendClass.swift in Sources */,
 				C7A53F6F1D3C28E8006CFAA7 /* CurrentLocationViewController.swift in Sources */,
 				F63D58FF1D318490000C02E9 /* Pass.xcdatamodeld in Sources */,
 				C7A53F7D1D3C2A3E006CFAA7 /* RequestFriendViewController.swift in Sources */,
 				C7A53F871D3C2BA9006CFAA7 /* ChatListViewController.swift in Sources */,
+				F6524E231D85D47700F06897 /* FriendRequestsCustomCell.swift in Sources */,
 				C7A53F6D1D3C254B006CFAA7 /* ProfileViewController.swift in Sources */,
 				C7A53F811D3C2A69006CFAA7 /* ViewAnEventViewController.swift in Sources */,
 				F63D58F71D318490000C02E9 /* AppDelegate.swift in Sources */,
