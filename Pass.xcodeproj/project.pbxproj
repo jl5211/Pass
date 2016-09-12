@@ -39,6 +39,7 @@
 		F6524E231D85D47700F06897 /* FriendRequestsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E221D85D47700F06897 /* FriendRequestsCustomCell.swift */; };
 		F6524E251D85D4C300F06897 /* EventsNearCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E241D85D4C300F06897 /* EventsNearCustomCell.swift */; };
 		F6524E271D85D4DF00F06897 /* EventsJoinedCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E261D85D4DF00F06897 /* EventsJoinedCustomCell.swift */; };
+		F6524E291D86331A00F06897 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524E281D86331A00F06897 /* EventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		F6524E221D85D47700F06897 /* FriendRequestsCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestsCustomCell.swift; sourceTree = "<group>"; };
 		F6524E241D85D4C300F06897 /* EventsNearCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsNearCustomCell.swift; sourceTree = "<group>"; };
 		F6524E261D85D4DF00F06897 /* EventsJoinedCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsJoinedCustomCell.swift; sourceTree = "<group>"; };
+		F6524E281D86331A00F06897 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				F63D58F61D318490000C02E9 /* AppDelegate.swift */,
 				F63D58F81D318490000C02E9 /* ViewController.swift */,
 				F63D58FA1D318490000C02E9 /* Main.storyboard */,
+				F6524E281D86331A00F06897 /* EventsViewController.swift */,
 				F63D59001D318490000C02E9 /* Assets.xcassets */,
 				F63D59021D318490000C02E9 /* LaunchScreen.storyboard */,
 				F63D59051D318490000C02E9 /* Info.plist */,
@@ -506,6 +509,7 @@
 				C7A53F891D3C2C78006CFAA7 /* CustomerSupportViewController.swift in Sources */,
 				C7A53F751D3C29C5006CFAA7 /* FriendsMainViewController.swift in Sources */,
 				C7416C151D602EBE00DEF2D6 /* CustomCell.swift in Sources */,
+				F6524E291D86331A00F06897 /* EventsViewController.swift in Sources */,
 				C7A53F7F1D3C2A4C006CFAA7 /* EventsPageViewController.swift in Sources */,
 				F63D58F91D318490000C02E9 /* ViewController.swift in Sources */,
 				F6524E251D85D4C300F06897 /* EventsNearCustomCell.swift in Sources */,

@@ -10,6 +10,15 @@ import UIKit
 
 class EventsNearCustomCell: UITableViewCell {
 
+    
+    @IBOutlet var photo: UIImageView!
+    
+    @IBOutlet var name: UILabel!
+    
+    @IBOutlet var location: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
