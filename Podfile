@@ -8,7 +8,9 @@ target 'Pass' do
 
   pod 'Alamofire', '~> 3.4'
   # Pods for Pass
-
+  
+  pod 'SwiftyJSON'
+  
   target 'PassTests' do
     inherit! :search_paths
     # Pods for testing

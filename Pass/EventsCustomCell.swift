@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventsNearCustomCell: UITableViewCell {
+class EventsCustomCell: UITableViewCell {
 
     
     @IBOutlet var photo: UIImageView!
