@@ -44,4 +44,17 @@ class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("Errors: " + error.localizedDescription)
     }
+    
+    @IBAction func notificationButton(sender: AnyObject) {
+        
+        let notification = UILocalNotification()
+        notification.fireDate = NSDate(timeIntervalSinceNow: 5)
+        notification.alertBody = "Test Notification"
+        notification.timeZone = NSTimeZone.defaultTimeZone()
+        notification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+
+    }
+    
 }
