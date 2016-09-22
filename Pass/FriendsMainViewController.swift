@@ -26,6 +26,23 @@ class FriendsMainViewController:
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let parameters1 : [String: AnyObject] = [:
+            
+            // "fbUserId": fbUserId,
+            //"collegeName" : possibleSchool,
+            //"year" : year.text!,
+            //"major": major.text!,
+            //"interest" : likes.text,
+            //"gcmId": fcmToken ]
+        ]
+        
+        Alamofire.request(.POST, "http://www.passbyus.org/registration.php", parameters: parameters1, encoding: .JSON)
+            .validate()
+            .responseString{ response in
+                print("Success: \(response.result.isSuccess)")
+                print("Response String: \(response.result.value)")
+                print(parameters1)
+        }
 
         // Do any additional setup after loading the view.
     }
