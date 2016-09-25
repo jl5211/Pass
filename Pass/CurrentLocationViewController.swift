@@ -9,13 +9,16 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Alamofire
 
 class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
-
+    var xcoor: CLLocationDegrees?
+    var ycoor: CLLocationDegrees?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +27,37 @@ class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
+        /*let studentn = 1
+        
+        let parameters1 : [String: AnyObject] = [
+            
+            "user_id": "abc123",
+            "student" : studentn,
+            "location_x" : xcoor!,
+            "location_y": ycoor!,
+            "session_cookie" : "1223",
+            "friend_top" : 0,
+            "chats_top" : 0,
+            ]
+        
+        Alamofire.request(.POST, "http://www.passbyus.org/updateLocation.php", parameters: parameters1 )
+            .validate()
+            .responseString{ response in
+                print("Success: \(response.result.isSuccess)")
+                print("Response String: \(response.result.value)")
+                print(parameters1)
+                //let JSON = response.result.value
+                /* if let JSON = response.result.value {
+                 print(JSON)
+                 if (response.result.value is NSNull){}
+                 else
+                 { self.recieved = JSON as! [[String:AnyObject]]//[Dictionary<String,AnyObject>]}
+                 }
+                 }*/
+                
+        }
+*/
+        
 
     }
 
@@ -39,6 +73,8 @@ class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         let center = CLLocationCoordinate2D(latitude:location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004))
         self.mapView.setRegion(region, animated: true)
+        self.xcoor = location?.coordinate.latitude
+        self.ycoor = location?.coordinate.longitude
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

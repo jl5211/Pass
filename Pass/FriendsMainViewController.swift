@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Alamofire
+import SwiftyJSON
 class FriendsMainViewController:
 
 
@@ -15,6 +16,26 @@ class FriendsMainViewController:
 
     @IBOutlet weak var friendsTableView: UITableView!
     
+    @IBAction func hideAll(sender: AnyObject) {
+        let parameters1 : [String: AnyObject] = [
+            
+            "transaction_cookie": "abc123",
+            "user_id" : "jl5211@nyu.edu",
+            "friend_id" : "",
+            "hidden": "Jesus",
+            ]
+        
+        Alamofire.request(.POST, "https://www.passbyus.org/changeHidden.php", parameters: parameters1 )
+            .validate()
+            .responseString{ response in
+                print("Success: \(response.result.isSuccess)")
+                //print("Response String: \(response.result.value)")
+                //print(parameters1)
+                //self.transaction_cookie = response.result.value
+                
+        }
+
+    }
     var friends:[FriendClass]?
     var friend:FriendClass?
     
@@ -23,26 +44,33 @@ class FriendsMainViewController:
     var areas = ["Brooklyn, NY", "Staten Island, NY", "Queens, NY"]
     
     var images = [UIImage(named: "Elon"), UIImage(named: "Shiny"), UIImage(named: "Jesus")]
-   
+    let studentn:Int = 1
+    var transaction_cookie: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        let parameters1 : [String: AnyObject] = [:
+        let parameters1 : [String: AnyObject] = [
             
-            // "fbUserId": fbUserId,
-            //"collegeName" : possibleSchool,
-            //"year" : year.text!,
-            //"major": major.text!,
-            //"interest" : likes.text,
-            //"gcmId": fcmToken ]
+            "password": "abc123",
+            "email" : "jl5211@nyu.edu",
+            "student" : studentn,
+            "f_name": "Jesus",
+            "l_name" : "Leal",
         ]
         
-        Alamofire.request(.POST, "http://www.passbyus.org/registration.php", parameters: parameters1, encoding: .JSON)
+        Alamofire.request(.POST, "https://www.passbyus.org/registration.php", parameters: parameters1 )
             .validate()
             .responseString{ response in
                 print("Success: \(response.result.isSuccess)")
-                print("Response String: \(response.result.value)")
-                print(parameters1)
+                //print("Response String: \(response.result.value)")
+                //print(parameters1)
+                //self.transaction_cookie = response.result.value
+                
         }
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(transaction_cookie, forKey: "tCookie")
+        print (transaction_cookie)
+        
 
         // Do any additional setup after loading the view.
     }

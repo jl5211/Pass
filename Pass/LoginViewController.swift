@@ -12,23 +12,70 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let parameters1 : [String: AnyObject] = [:
+        let studentn = 1
+        /*
+        let parameters1 : [String: AnyObject] = [
             
-           // "fbUserId": fbUserId,
-            //"collegeName" : possibleSchool,
-            //"year" : year.text!,
-            //"major": major.text!,
-            //"interest" : likes.text,
-            //"gcmId": fcmToken ]
-        ]
-        Alamofire.request(.PUT, "", parameters: parameters1, encoding: .JSON)
+            "password": "abc123",
+            "email" : "jl5211@nyu.edu",
+            "student" : studentn,
+            "f_name": "Jesus",
+            "l_name" : "Leal",
+            ]
+        
+        Alamofire.request(.POST, "http://www.passbyus.org/registration.php", parameters: parameters1/*, encoding: .JSON*/)
             .validate()
             .responseString{ response in
                 print("Success: \(response.result.isSuccess)")
                 print("Response String: \(response.result.value)")
                 print(parameters1)
         }
+        
+        let parameters2 : [String: AnyObject] = [
+            
+            "code": "abc123",
+            "transaction_cookie" : "jl5211@nyu.edu",
+            ]
+        
+        Alamofire.request(.POST, "http://www.passbyus.org/registrationConfirmation.php", parameters: parameters2, encoding: .JSON)
+            .validate()
+            .responseString{ response in
+                print("Success: \(response.result.isSuccess)")
+                print("Response String: \(response.result.value)")
+                print(parameters1)
+        }
+        
+        let parameters3 : [String: AnyObject] = [
+            
+            "password": "abc123",
+            "email" : "jl5211@nyu.edu",
+            ]
+        
+        Alamofire.request(.POST, "http://www.passbyus.org/login.php", parameters: parameters3, encoding: .JSON)
+            .validate()
+            .responseString{ response in
+                print("Success: \(response.result.isSuccess)")
+                print("Response String: \(response.result.value)")
+                print(parameters1)
+        }
+        
+        let parameters4 : [String: AnyObject] = [
+            
+            "session_cookie": "abc123",
+            "user_id" : "jl5211@nyu.edu"
+            ]
+        
+        Alamofire.request(.POST, "http://www.passbyus.org/requestTransaction.php", parameters: parameters1, encoding: .JSON)
+            .validate()
+            .responseString{ response in
+                print("Success: \(response.result.isSuccess)")
+                print("Response String: \(response.result.value)")
+                print(parameters1)
+        }
+
+*/
+
+
 
         // Do any additional setup after loading the view.
     }
